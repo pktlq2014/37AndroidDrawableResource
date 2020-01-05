@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/linear"
+        android:layout_centerInParent="true"
+        android:layout_margin="50dp"
+        android:id="@+id/rela"
+        >
+
+        <ImageView
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:src="@mipmap/aaa"
+            android:id="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:gravity="center"
+            android:id="@+id/editText1"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/edit"
+            android:layout_below="@id/imageView1"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:gravity="center"
+            android:id="@+id/editText2"
+            android:background="@drawable/edit"
+            android:layout_below="@id/editText1"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_below="@id/rela"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:textAllCaps="true"
+        android:padding="20dp"
+        android:textSize="20dp"
+        android:background="@drawable/but"
+        />
+</RelativeLayout>
